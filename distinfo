@@ -1,0 +1,7 @@
+TIMESTAMP = 1589229326
+SHA256 (wasm3-wasm3-v0.4.7_GH0.tar.gz) = 11e863a643f605d62a5276e342abb01a65d33d138d01ea0070622a3f78fa1bd5
+SIZE (wasm3-wasm3-v0.4.7_GH0.tar.gz) = 2506986
+SHA256 (cjihrig-uvwasi-v0.0.8_GH0.tar.gz) = 25ce77e045d511464ad524bdc70ab79113717a236d322176f6463514c7fc4c73
+SIZE (cjihrig-uvwasi-v0.0.8_GH0.tar.gz) = 47726
+SHA256 (libuv-libuv-v1.37.0_GH0.tar.gz) = 7afa3c8a326b3eed02a9addb584ae7e995ae4d30516cad5e1e4af911931162a6
+SIZE (libuv-libuv-v1.37.0_GH0.tar.gz) = 1249701

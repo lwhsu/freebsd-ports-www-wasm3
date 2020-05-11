@@ -1,0 +1,19 @@
+--- deps/uvwasi/CMakeLists.txt.orig	2020-05-11 20:57:26 UTC
++++ deps/uvwasi/CMakeLists.txt
+@@ -20,16 +20,7 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+   list(APPEND uvwasi_defines _GNU_SOURCE _POSIX_C_SOURCE=200112)
+ endif()
+ 
+-include(FetchContent)
+-## https://libuv.org
+-FetchContent_Declare(
+-        libuv
+-        GIT_REPOSITORY https://github.com/libuv/libuv.git
+-        GIT_TAG ${LIBUV_VERSION})
+-
+-FetchContent_GetProperties(libuv)
+ if(NOT libuv_POPULATED)
+-    FetchContent_Populate(libuv)
+     include_directories("${libuv_SOURCE_DIR}/include")
+     add_subdirectory(${libuv_SOURCE_DIR} ${libuv_BINARY_DIR} EXCLUDE_FROM_ALL)
+ endif()

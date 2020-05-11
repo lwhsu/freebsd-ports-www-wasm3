@@ -1,0 +1,19 @@
+--- CMakeLists.txt.orig	2020-05-11 21:01:51 UTC
++++ CMakeLists.txt
+@@ -162,16 +162,7 @@ if(BUILD_WASI MATCHES "simple")
+ elseif(BUILD_WASI MATCHES "metawasi")
+   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Dd_m3HasMetaWASI")
+ elseif(BUILD_WASI MATCHES "uvwasi")
+-  include(FetchContent)
+-  FetchContent_Declare(
+-    uvwasi
+-    GIT_REPOSITORY https://github.com/cjihrig/uvwasi.git
+-    GIT_TAG v0.0.8
+-  )
+-
+-  FetchContent_GetProperties(uvwasi)
+   if(NOT uvwasi_POPULATED)
+-    FetchContent_Populate(uvwasi)
+     include_directories("${uvwasi_SOURCE_DIR}/include")
+     add_subdirectory(${uvwasi_SOURCE_DIR} ${uvwasi_BINARY_DIR} EXCLUDE_FROM_ALL)
+   endif()
